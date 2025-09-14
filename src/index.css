@@ -1,1 +1,86 @@
 @import 'tailwindcss';
+
+/* Load DM Sans variable font */
+@import '@fontsource-variable/dm-sans';
+
+@theme {
+  --color-primary-text: #f9fafb;
+  --color-secondary-text: #d2d5da;
+
+  --color-card: #212936cc;
+  --color-card-secondary: #121826cc;
+
+  --color-primary-color: #4d5562;
+  --color-secondary-color: #394150;
+
+  --color-background: #040711;
+
+  --color-button: #263fa9;
+  --color-button-outline: #7ca9f3;
+}
+
+body {
+  font-family: 'DM Sans Variable', sans-serif;
+}
+
+/* #root {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+} */
+
+.text-area::-webkit-scrollbar {
+  width: 3px;
+}
+
+.text-area::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 7px;
+}
+
+.text-area::-webkit-scrollbar-thumb {
+  background: var(--color-primary-color);
+  border-radius: 7px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  .text-area {
+    scrollbar-color: var(--color-primary-color) transparent;
+  }
+}
+
+.custom-select,
+::picker(select) {
+  appearance: base-select;
+}
+
+.custom-select {
+  &::picker-icon {
+    color: var(--color-secondary-text);
+    transition: 0.4s rotate;
+  }
+
+  &:open::picker-icon {
+    rotate: 180deg;
+  }
+}
+
+::picker(.custom-select) {
+  border: none;
+}
+
+option::checkmark {
+  order: 1;
+  margin-left: auto;
+  margin-top: 2px;
+  content: url('./assets/check.svg');
+}
+
+option:nth-of-type(odd) {
+  background: var(--color-secondary-color);
+}
+
+option:hover,
+option:focus {
+  background: var(--color-button);
+}
