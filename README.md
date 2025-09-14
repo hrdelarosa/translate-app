@@ -15,11 +15,11 @@ Este proyecto su idea principal es permitir traducir textos entre múltiples idi
 <summary>Tabla de contenidos</summary>
 
 - [Translate App](#translate-app)
-  - [Tecnologías utilizadas](#tecnologías-utilizadas)
-  - [Características](#características)
-  - [Estructura del proyecto](#estructura-del-proyecto)
-  - [Uso de la API](#uso-de-la-api)
-  - [Instalación](#instalación)
+- [Tecnologías utilizadas](#tecnologías-utilizadas)
+- [Características](#características)
+- [Estructura del proyecto](#estructura-del-proyecto)
+- [Uso de la API](#uso-de-la-api)
+- [Instalación](#instalación)
 
 </details>
 
